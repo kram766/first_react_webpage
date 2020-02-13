@@ -1,23 +1,42 @@
-import React, { useEffect , useRef} from 'react';
+import React, {useRef} from 'react';
 import gsap from 'gsap';
+import { useIntersection } from 'react-use';
 import weather from '../image/icon-awi.png';
 import smart_beta from '../image/smart_beta.png';
 import idea from '../image/ideas.svg';
 import model from '../image/model.svg';
 const Smallcasedifftype = () => {
-    let firstdiv = useRef(null);
-    let seconddiv = useRef(null);
-    let thirddiv = useRef(null);
-    let fourthdiv = useRef(null);
+    // use ref for our element
+    const firstdiv = useRef(null);
+    // all ref to be observed
+    const intersection = useIntersection(firstdiv, {
+        root:null,
+        rootMargin:"0px",
+        threshold:0.5
 
-useEffect( () =>{
-// TweenMax.from(firstdiv,.8, {opacity:0,y:50,ease: Power3.easeOut})
-gsap.to(firstdiv, { duration: 1, opacity:1, ease: "power3.out", y: -20 });
-gsap.to(seconddiv, { duration: 1, opacity:1, ease: "power3.out", y: -20 });
-gsap.to(thirddiv, { duration: 1, opacity:1, ease: "power3.out", y: -20 });
-gsap.to(fourthdiv, { duration: 1, opacity:1, ease: "power3.out", y: -20 });
+    });
 
-},[]);
+    // animation for fading in
+    const fadeIn = element =>{
+        gsap.to(element,1, {
+            opacity:1,
+            y:-50,
+            ease: "power4.out"
+        });
+    };
+
+    // amination for fading out
+    const fadeOut = element =>{
+        gsap.to(element,1, {
+            opacity:0,
+            y:0,
+            ease: "power4.out"
+        });    
+    };
+    //checking to see when the viewport is visible to the user
+    intersection && intersection.intersectionRatio <0.5
+    ?fadeOut(".difftype-card")
+    :fadeIn(".difftype-card")
         return ( 
             <>
             <div className="smallcasedifftype">
@@ -29,23 +48,23 @@ gsap.to(fourthdiv, { duration: 1, opacity:1, ease: "power3.out", y: -20 });
                     </div>
                    <div className="difftype-content-section2">
                        <div className="difftype-card-section">
-                           <div className="difftype-card" ref={ el=> firstdiv = el }>
+                           <div className="difftype-card" ref={firstdiv}>
                                <img src={weather} alt=""></img>
                                <h4>All Weather Investing</h4>
                                <p>The recession proof way of building long-term wealth</p>
                            </div>
-                           <div className="difftype-card" ref={ el=> seconddiv = el }>
+                           <div className="difftype-card">
                                <img src={smart_beta} alt=""></img>
                                <h4>Smart Beta</h4>
                                <p>Quantitative strategies built with blue-chip stocks , with an aim to beat the market</p>
                                
                            </div>
-                           <div className="difftype-card" ref={ el=> thirddiv = el }>
+                           <div className="difftype-card">
                                <img src={idea} alt=""></img>
                                <h4>Thematic & Sectoral</h4>
                                <p>Invest in disruptive ideas & long-term trends around you impacting the Indian economy</p> 
                             </div>
-                            <div className="difftype-card" ref={ el=> fourthdiv = el }>
+                            <div className="difftype-card">
                                <img src={model} alt=""></img>
                                <h4>Model-Based</h4>
                                <p>Portfolios based on technical & fundamental factors or strategies of famous investors</p>
