@@ -11,12 +11,12 @@ class InvestCreator extends Component {
                     <h1>Managed by India's top financial experts</h1>
                     <p>smallcases are built & managed by SEBI licensed professionals, using quantitative models & algorithms to screen & weight constituents</p>
                     <div className="creator-button-link">
-                        <Link className="see-creators">See All Creators</Link>
-                        <Link className="hear-creators">Hear the Creators</Link>
+                        <Link className="see-creators" to="">See All Creators</Link>
+                        <Link className="hear-creators" to="">Hear the Creators</Link>
                     </div>
                 </div>
                 <div className="creator-content creator-content-video">
-                <video autoplay="true" playsinline=""  loop="true" src={scroll} type="video/mp4"></video>
+                <video autoPlay={true} playsInline={true}  loop={true} src={scroll} type="video/mp4"></video>
                 </div>
 
             </div>

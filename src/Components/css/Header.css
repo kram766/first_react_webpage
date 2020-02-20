@@ -356,6 +356,7 @@ body{
 }
 .creator-content-video{
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 .content >p{
     margin: 10px 0px;
@@ -370,6 +371,7 @@ body{
     margin-top: 35px;
 }
 .see-creators{
+    display: inline-block;
     text-decoration: none;
     background-color: #1f7ae0;
     color: white;
@@ -377,12 +379,14 @@ body{
     border-radius: 5px;
     font-size: 15px;
     margin-right: 20px;
+    transition: .2s;
 }
 .see-creators:hover,.hear-creators:hover{
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.12);
     transform: translateY(-2px);
 }
 .hear-creators{
+    display: inline-block;
     text-decoration: none;
     background-color: white;
     border: 1px solid #1f7ae0;
@@ -391,4 +395,5 @@ body{
     border-radius: 5px;
     font-size: 15px;
     margin-right: 20px;
+    transition: .2s;
 }
