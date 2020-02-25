@@ -1,0 +1,127 @@
+.signup_page{
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
+}
+.signup-content{
+    margin: 50px 125px;
+    display: flex;
+}
+.signup-credential-content{
+    width: 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.signup-credential-content >h4{
+    font-weight: 100;
+    font-size: 15px;
+    color: darkslategray;
+}
+.signup-credential-content >h1{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: #2f363f;
+}
+.signup-credential-content >h3{
+    font-size: 15px;
+    color: #2f363f;
+    margin-bottom: 10px;
+}
+.signup-credential-content >p{
+    font-size: 15px;
+    color: darkslategray;
+    margin-bottom: 50px;
+}
+.signup-credential-content >form >label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+input[type="text"]{
+    border-radius: 3px;
+    padding: 15px 10px;
+    border-style: groove;
+    width: 340px;
+    margin-bottom: 20px;
+    border: 1px solid darkgray;
+}
+.checkbox{
+    display: flex;
+    width: 300px;
+}
+.checkbox-content{
+    margin-right:10px;   
+}
+.checkbox-content >b{
+    font-size: 15px;
+    color: #2f363f;
+}
+.checkbox-content >p{
+    margin: 10px 0px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2f363f;
+    margin-bottom: 54px;
+}
+.continue-forEmail{
+    display: inline-block;
+    width: 350px;
+    background-color: #1f7ae0;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #1f7ae0;
+    transition: .2s;
+}
+.continue-forEmail:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.12);
+    opacity: .9;
+}
+.signup-smallcase-content{
+    margin-top: 150px;
+    display: inline-block;
+}
+.signup-smallcase-content >h4,.signup-smallcase-content >p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.signup-smallcase-content >p{
+    color: gray;
+}
+.signup-smallcase-content >ul{
+    list-style: none;
+}
+.signup-smallcase-content >ul >li{
+    width: 100px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 15px;
+    transition:.2s;
+}
+.signup-smallcase-content >ul >li >img{
+    margin-right: 10px;
+    height: 15px;
+}
+.signup-smallcase-content >ul >li:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.slider{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: aliceblue;
+    font-size: 15px;
+    border-radius: 3px;
+    height: 60px;
+}
+.slick-slider{
+    width: 300px;
+    display: inline-block;
+}

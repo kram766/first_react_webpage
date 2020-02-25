@@ -16,7 +16,7 @@ class InvestCreator extends Component {
                     </div>
                 </div>
                 <div className="creator-content creator-content-video">
-                <video autoPlay={true} playsInline={true}  loop={true} src={scroll} type="video/mp4"></video>
+                <video autoPlay={true} playsInline={false}  loop={true} src={scroll} type="video/mp4"></video>
                 </div>
 
             </div>
