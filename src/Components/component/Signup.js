@@ -11,7 +11,8 @@ class Signup extends Component {
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay:true
           };
         return ( 
             <div className="signup_page">
@@ -46,9 +47,9 @@ class Signup extends Component {
                     </div>
                     <div className="slider">
                        <Slider {...settings}>
-                        <div className="slide-content"><p>Smallcases are tailor-made for long-term investments</p><b>Muthu R</b></div>
-                        <div className="slide-content"><p>smallcases are transparent, straight-forward & familiar</p><b>Aamna Khan</b></div>
-                        <div className="slide-content"><p>Investing in two clicks is a breath of fresh air</p><b>Manoj MJ</b></div>
+                        <div className="slide-content"><p>Smallcases are tailor-made for long-term investments</p><b>R Raghwan</b></div>
+                        <div className="slide-content"><p>smallcases are transparent, straight-forward & familiar</p><b>Kamlesh pandey</b></div>
+                        <div className="slide-content"><p>Investing in two clicks is a breath of fresh air</p><b>Ravi Raj</b></div>
 
                         </Slider>
                     </div>   

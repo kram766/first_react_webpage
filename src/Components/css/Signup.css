@@ -95,7 +95,7 @@ input[type="text"]{
     list-style: none;
 }
 .signup-smallcase-content >ul >li{
-    width: 100px;
+    width: 110px;
     display: inline-block;
     padding: 10px;
     margin: 10px;
@@ -124,4 +124,18 @@ input[type="text"]{
 .slick-slider{
     width: 300px;
     display: inline-block;
+}
+@media  screen and (max-width:1024px){
+    .signup-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .signup-credential-content {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .signup-credential-content >h1 {
+        font-size: 44px;
+    }
+
 }
