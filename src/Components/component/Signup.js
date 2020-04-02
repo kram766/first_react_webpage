@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import Headers from '../Header';
 import {Link} from 'react-router-dom';
 import '../css/Signup.css';
 import imagedata from '../images';
 import Slider from 'react-slick';
+import Footer from '../Footer';
 class Signup extends Component {
     state = {  }
     render() { 
@@ -15,6 +17,8 @@ class Signup extends Component {
             autoplay:true
           };
         return ( 
+            <>
+            <Headers />
             <div className="signup_page">
             <div className="signup-content">
                 <div className="signup-credential-content">
@@ -56,6 +60,8 @@ class Signup extends Component {
                 </div>
             </div>
             </div>
+            <Footer />
+            </>
          );
     }
 }
