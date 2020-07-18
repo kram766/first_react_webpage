@@ -8,7 +8,7 @@ import Explore from './Components/component/Dis-explore';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={ window.location.pathname || ''}>
       <Route exact path="/jobs" component={Jobs} />
       <Route path="/" exact component={Home} />
       <Route path="/signup" component={Signup} />
