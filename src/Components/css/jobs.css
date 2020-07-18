@@ -90,27 +90,27 @@
     font-weight: bold;
     color: #2f363f;
 }
-.job-open-option:hover .analyst-p,.business-development:hover .analyst-p{
+.job-open-option:hover ~ .analyst-p,.business-development:hover ~ .analyst-p{
     color: #1E90FF;
 }
-.additional-detail{
+.additional-detail,.additional-detail1,.additional-detail2,.additional-detail3,.additional-detail4,.additional-detail5,.additional-detail6,.additional-detail7,.additional-detail8{
     display: none;
     padding: 20px;
     border: 1px solid darkgray;
     border-radius: 5px;  
     transition: 2s; 
 }
-.additional-detail >ul{
+.additional-detail >ul,.additional-detail1 >ul{
     list-style: none;
 }
-.additional-detail >ul >li{
+.additional-detail >ul >li,.additional-detail1 >ul >li{
     font-size: 18px;
     margin-bottom: 10px;
 }
-.additional-detail:hover ul>li{
+.additional-detail:hover ul>li,.additional-detail1:hover ul>li{
     color:#1E90FF ;
 }
-.additional-detail:hover{
+.additional-detail:hover,.additional-detail1:hover{
     cursor: pointer;
 }
 .add-class{

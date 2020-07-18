@@ -9,7 +9,7 @@ const Header = () => {
             <div className="header-content section_1">
              <ul>
                  <li><Link to=""><img src={image} alt="" /></Link></li>
-                 <li><Link to="">Discover</Link></li>
+                 <li><Link to="/discover/explore">Discover</Link></li>
                  <li><Link to="">Creator</Link></li>
              </ul>
             </div>
@@ -21,6 +21,7 @@ const Header = () => {
                   <li><Link className="login" to="">Login</Link></li>
                 </ul>  
             </div>
+            <i className="fas fa-sliders-h"></i>
         </div>
         </>
      );

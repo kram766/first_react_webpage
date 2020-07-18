@@ -68,13 +68,13 @@ class Jobs extends Component {
                         <p className="analyst-p">Bussiness Development</p>
                         <p className="flr">4 open Role</p>
                     </div>
-                    <div className={`additional-detail ${this.state.clas}`}>
+                    <div className={`additional-detail1 ${this.state.clas}`}>
                         <ul>
                             <li>Buisiness Development</li>
                             <p>bangalaru || Full Time</p>
                         </ul>
                     </div>
-                    <div className={`additional-detail ${this.state.clas}`}>
+                    <div className={`additional-detail1 ${this.state.clas}`}>
                         <ul>
                             <li>Buissiness owner</li>
                             <p>bangalaru || Full Time</p>
