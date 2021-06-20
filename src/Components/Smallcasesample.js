@@ -12,7 +12,7 @@ const SmallcaseSample = () => {
       // all ref to be observed
       const intersection = useIntersection(seconddiv, {
           root:null,
-          rootMargin:"100px",
+          rootMargin:"400px",
           threshold:1
   
       });
